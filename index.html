@@ -13,31 +13,23 @@
 <title>Cookies and Code</title>
 
 <div id="main" class="container-fluid">
-  <!-- <nav class="navbar-fixed-top">
+   <nav class="navbar-fixed-top">
     <ul class="menu-bar">
       <li class="menu-bar"><a href="#contact" class="menu-contact">Syllabus</a></li>
-      <li class="menu-bar"><a href="#about" class="menu-about">Join</a></li>
-      <li class="menu-bar"><a href="#portfolio" class="menu-portfolio">Events</a></li>
-      <li class="menu-bar"><a href="#superpowers" class="menu-superpowers">About</a></li>
+      <li class="menu-bar"><a href="#join" class="menu-about">Join</a></li>
+      <li class="menu-bar"><a href="#eventsID" class="menu-portfolio">Events</a></li>
+      <li class="menu-bar"><a href="#about" class="menu-superpowers">About</a></li>
     </ul>
-  </nav>   -->
-  <div data-spy="affix" data-offset-top="100" id="dot-nav">
-    <ul>
-      <li title="Home"><a href="#home"></a></li>
-      <li title="About"><a href="#about"></a></li>
-      <li title="Events"><a href="#events"></a></li>
-      <li title="Contact"><a href="#contact"></a></li>
-    </ul>
-  </div>
+  </nav>   
   <div data-stellar-offset-parent="true">
     <section id="home">
       <div id="box">
         <span>Cookies & Code</span><br>
         <br>
         <br>
-        <div class="subtitle slideanim">
+        <div class="subtitle ">
           <h3>Computer Science Student Club</h3>
-          <h3 class="slideanim">Tulane University</h3>
+          <h3>Tulane University</h3>
         </div>
       </div>
     </section>
@@ -50,11 +42,9 @@
 <body data-spy="scroll" data-target=".navbar" data-offset="50">
 
   <div class="container-fluid">
-    <section id="about">
-      <div class="row whatwedo slideanim">
+    <div id="about">
+      <div class="row boxSlide slideanim">
         <h2 class="text-center slideanim">What we do</h2>
-        <br>
-
         <div class="col-md-4 text-center slideanim">
           <span class="glyphicon glyphicon-education fa-4x"></span>
           <h3>Teach</h3>
@@ -72,38 +62,22 @@
         </div>
         <hr>
       </div>
-    </section>
+    </div>
 
   </div>
-  <!-- <br><br><br><br> -->
-  <div class="container-fluid">
-    <div class="row">
-      <section id="events">
-        <h2 class="text-center slideanim">Events</h2>
-      </section>
-    </div>
+  
+  <div class="container eventsContainer slideanim">
+      
   </div>
-  <div id="about">
-    <h2 class="text-center slideanim">About Me</h2>
-    <h3 class="text-center slideanim" style="text-transform: uppercase;">Hi, My Name is Sarah</h3>
-    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/-Insert_image_here-.svg/2000px--Insert_image_here-.svg.png"
-      class="img-circle center-block slideanim" alt="Me" width="304" height="236">
-    <br>
-    <p class="text-center slideanim">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sagittis sem diam, et tristique ipsum sodales eget. Ut
-      vel tincidunt mi, a porta quam. Cras et enim ligula. Suspendisse at ullamcorper augue. Donec pharetra erat quis mollis
-      sodales. Nullam est dolor, rhoncus et finibus id, pellentesque quis leo. Pellentesque habitant morbi tristique senectus
-      et netus et malesuada fames ac turpis egestas.</p>
-  </div>
-  </div>
-  </div>
+
 
   <div data-stellar-offset-parent="true">
-    <div class="photo end" data-stellar-background-ratio="0.5">
+    <div class="photo end slideanim" data-stellar-background-ratio="0.5">
       <section id="contact" class="container-fluid">
         <h2 class="text-center">CONTACT</h2>
         <div class="row">
           <div class="col-sm-6 col-md-12">
-            <p class="text-center" style="color: white;">Contact.</p>
+            <p class="text-center" style="color: white;"></p>
             <div class="col-sm-7 col-md-12">
               <div class="row">
                 <div class="col-sm-6 col-md-12 form-group">
@@ -115,8 +89,8 @@
               </div>
               <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea><br>
               <div class="row">
-                <div class="col-sm-12 col-md-12 form-group">
-                  <button class="btn btn-default pull-left" type="submit">Send</button>
+                <div class="col-sm-6 col-md-12 form-group" id="btnWrapper">
+                  <button class="btn btn-default" type="submit" >Send</button>
                 </div>
               </div>
             </div>
@@ -125,11 +99,7 @@
         <div class="row">
           <div class="col-sm-6 col-md-12">
             <ul class="social-network">
-              <li><a href="#" class="icoGitHub" title=""><i class="fa fa-github"></i></a></li>
               <li><a href="#" class="icoFacebook" title=""><i class="fa fa-facebook"></i></a></li>
-              <li><a href="#" class="icoTwitter" title=""><i class="fa fa-twitter"></i></a></li>
-              <li><a href="#" class="icoGoogle" title=""><i class="fa fa-google-plus"></i></a></li>
-              <li><a href="#" class="icoLinkedin" title=""><i class="fa fa-linkedin"></i></a></li>
             </ul>
 
 
@@ -142,8 +112,6 @@
         <div class="container-fluid">
 
         </div>
-        <br> Copyright &copy 2017 | Nerdy And Natural Inc
-        <br> Designed by Sarah Williams
       </footer>
     </div>
   </div>
