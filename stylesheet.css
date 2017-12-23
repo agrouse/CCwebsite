@@ -106,7 +106,6 @@ form {
 
 
 
-
 #box {
 	color: white;
 	font-family: "Open Sans", Helvetica, sans-serif;
@@ -146,32 +145,45 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-  	color: white; 
+    color: white; 
+      
   
 }
 
 
 .row{
-  width: 80%;
-  /* margin-left: 100px; */
-  margin: auto;
+  width: 100%;
+  margin-left: 100px; 
+  margin: auto; 
+}
 
+.eventsContainer {
+    height: 100px; 
+    line-height: 90px;
+    padding-bottom: 200px;
+    /* padding-top: 75px; */
+    /* margin-top: 75px; */
+    height: 80%;
+    /* display: inline-block; */
+}
+
+.eventsContainer p{
+    vertical-align: middle;
+    display: inline-block;
+}
+#eventsEle{
+    
 }
 .boxSlide{
     border: 3px solid white; 
     padding-bottom: 200px;
     padding-top: 75px;
-    margin: auto;
     margin-top: 75px;
+    /* margin: auto; */
     /* margin-left: 200px; */
     color: white;
     background: rgba(0, 0, 0, 0.3); 
     height: 80%;
-}
-
-
-.month{
-    padding-left: 500px;
 }
 
 
@@ -200,6 +212,10 @@ body {
     margin-left:auto;
     margin-right:auto;
 }
+#btnWrapper {
+    display: flex;
+    justify-content: center;
+  }
 
 .footer, .push {
     height: 10px;
@@ -325,7 +341,8 @@ a.socialIcon:hover, .socialHoverClass {
       }
 
       #about {
-      	height: 750px;
+          height: 750px;
+          width: 100%;
       }
       
       #contact {
