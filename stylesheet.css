@@ -8,7 +8,7 @@ body, html {
 }
 .navbar-fixed-top {
 	font-size: 14px;
-	color: silver;
+	color: black;
 	overflow: hidden;
 	padding-right: 30;
 	}
@@ -107,7 +107,7 @@ form {
 
 
 #box {
-	color: white;
+
 	font-family: "Open Sans", Helvetica, sans-serif;
 	font-size: 72px;
 	position: relative;
@@ -118,7 +118,7 @@ form {
 span {
 	padding: 5px;
 	margin: 5px;
-    border: 1px solid white;
+    border: 1px solid black;
     display: inline-block;
 	position: relative;
     top: 200px;
@@ -132,9 +132,7 @@ span {
 
 body {
     background: #BBD2C5;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to top, #919FA7, #D9E6DF);     
-    background: linear-gradient(to top, #919FA7, #D9E6D7);  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+     */  
-
+    background-image: linear-gradient(to top, #dfe9f3 0%, white 100%);
     /* background: white; */
 
     /* Full height */
@@ -145,7 +143,7 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    color: white; 
+    color: black; 
       
   
 }
@@ -154,8 +152,8 @@ body {
 
 
 .eventsContainer {
+    margin-top: 10%;
     height: 100px; 
-    line-height: 90px;
     padding-bottom: 200px;
     /* padding-top: 75px; */
     /* margin-top: 75px; */
@@ -167,8 +165,10 @@ body {
     vertical-align: middle;
     display: inline-block;
 }
-#eventsEle{
-    
+.card{
+    color: white;
+    background: rgba(230,175,46, .7);
+    background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
 }
 .aboutSection{
     height:100%;
@@ -180,11 +180,6 @@ body {
     background: rgba(0,0,0,.3);
 }
 
-
-.glyphicon.glyphicon-chevron-down{
-    left: 50%;
-    top: 50%;
-}
 
 .img-circle {
   border:2px solid white;
