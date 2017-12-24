@@ -10,7 +10,8 @@ body, html {
 	font-size: 14px;
 	color: black;
 	overflow: hidden;
-	padding-right: 30;
+    padding-right: 30;
+    position: fixed !important;
 	}
 
 
@@ -50,7 +51,7 @@ form {
 }
 
 .affix-top {
-    top: 32%; 
+    top: 25%; 
 	left: 0;
 	position:absolute;
 	z-index:2;
@@ -65,13 +66,17 @@ form {
 .container-fluid {
     padding-bottom: 200px;
 }
+.navbar {
+    justify-content: center;
+}
  .navbar-fixed-top.scrolled {
-  background-color: rgba(0,0,0,0.5) !important;
   transition: background-color 200ms linear;
+  background: white;
+  width: 1000%;
 }
 
 
-.menu-bar ul {
+.navbar ul {
 	font-family: "Open Sans", Helvetica, sans-serif;	
 	list-style: none;
     padding: 0;
@@ -83,7 +88,7 @@ form {
 	float: right;
 }
 
-.menu-bar li {
+.navbar li {
 	color: black;
 	display: inline-block;
 	margin: 1em 1em;
@@ -92,7 +97,7 @@ form {
 	float: right;
 }
 
-.menu-bar li a {
+.navbar li a {
 	display: inline-block;
 	color: black;
 	text-decoration: none;
@@ -100,7 +105,7 @@ form {
   font-size: 16px;
 }
 
-.menu-bar li a:hover {
+.navbar li a:hover {
 	color: silver;
 } 
 
@@ -169,8 +174,7 @@ body {
 }
 .card{
     color: white;
-    background: rgba(230,175,46, .7);
-    background-image: linear-gradient(-20deg, #616161 0%, #9bc5c3 100%);
+    background: rgba(0,0,0,.3);
 
 }
 .aboutSection{
