@@ -8,9 +8,10 @@ body, html {
 }
 .navbar-fixed-top {
 	font-size: 14px;
-	color: silver;
+	color: black;
 	overflow: hidden;
-	padding-right: 30;
+    padding-right: 30;
+    position: fixed !important;
 	}
 
 
@@ -50,7 +51,7 @@ form {
 }
 
 .affix-top {
-    top: 32%; 
+    top: 25%; 
 	left: 0;
 	position:absolute;
 	z-index:2;
@@ -65,13 +66,17 @@ form {
 .container-fluid {
     padding-bottom: 200px;
 }
+.navbar {
+    justify-content: center;
+}
  .navbar-fixed-top.scrolled {
-  background-color: rgba(0,0,0,0.5) !important;
   transition: background-color 200ms linear;
+  background: white;
+  width: 1000%;
 }
 
 
-.menu-bar ul {
+.navbar ul {
 	font-family: "Open Sans", Helvetica, sans-serif;	
 	list-style: none;
     padding: 0;
@@ -83,8 +88,8 @@ form {
 	float: right;
 }
 
-.menu-bar li {
-	color: silver;
+.navbar li {
+	color: black;
 	display: inline-block;
 	margin: 1em 1em;
 	font-family: "Open Sans", Helvetica, sans-serif;
@@ -92,22 +97,22 @@ form {
 	float: right;
 }
 
-.menu-bar li a {
+.navbar li a {
 	display: inline-block;
-	color: white;
+	color: black;
 	text-decoration: none;
 	padding: 0;
   font-size: 16px;
 }
 
-.menu-bar li a:hover {
+.navbar li a:hover {
 	color: silver;
 } 
 
 
 
 #box {
-	color: white;
+
 	font-family: "Open Sans", Helvetica, sans-serif;
 	font-size: 72px;
 	position: relative;
@@ -118,7 +123,7 @@ form {
 span {
 	padding: 5px;
 	margin: 5px;
-    border: 1px solid white;
+    border: 1px solid black;
     display: inline-block;
 	position: relative;
     top: 200px;
@@ -132,9 +137,8 @@ span {
 
 body {
     background: #BBD2C5;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #536976, #BBD2C5);     
-    background: linear-gradient(to right, #536976, #BBD2C5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+     */ 
-    background-image:url(Petrol.jpg);    
+    background-image: linear-gradient(to top, #dfe9f3 0%, white 100%);
+
     /* background: white; */
 
     /* Full height */
@@ -145,52 +149,44 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    color: white; 
+    color: black; 
       
   
 }
 
 
-.row{
-  width: 100%;
-  margin-left: 100px; 
-  margin: auto; 
-}
+
 
 .eventsContainer {
+    margin-top: 10%;
     height: 100px; 
-    line-height: 90px;
     padding-bottom: 200px;
     /* padding-top: 75px; */
     /* margin-top: 75px; */
     height: 80%;
     /* display: inline-block; */
+    margin-bottom: 10%;
 }
 
 .eventsContainer p{
     vertical-align: middle;
     display: inline-block;
 }
-#eventsEle{
-    
+.card{
+    color: white;
+    background: rgba(0,0,0,.3);
+
 }
-.boxSlide{
-    border: 3px solid white; 
-    padding-bottom: 200px;
+.aboutSection{
+    height:100%;
     padding-top: 75px;
     margin-top: 75px;
     /* margin: auto; */
     /* margin-left: 200px; */
     color: white;
-    background: rgba(0, 0, 0, 0.3); 
-    height: 80%;
+    background: rgba(0,0,0,.3);
 }
 
-
-.glyphicon.glyphicon-chevron-down{
-    left: 50%;
-    top: 50%;
-}
 
 .img-circle {
   border:2px solid white;
@@ -341,8 +337,8 @@ a.socialIcon:hover, .socialHoverClass {
       }
 
       #about {
-          height: 750px;
-          width: 100%;
+          height: 100%;
+          background: #1C2321;
       }
       
       #contact {

@@ -3,24 +3,35 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-<!-- Bootstrap -->
-<script src="https://npmcdn.com/tether@1.2.4/dist/js/tether.min.js"></script>
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.6/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 <link href="stylesheet.css" rel="stylesheet">
 <!-- <script type="text/javascript" src="script.js"></script> -->
 
 <title>Cookies and Code</title>
 
 <div id="main" class="container-fluid">
-   <nav class="navbar-fixed-top">
-    <ul class="menu-bar">
-      <li class="menu-bar"><a href="#contact" class="menu-contact">Syllabus</a></li>
-      <li class="menu-bar"><a href="#join" class="menu-about">Join</a></li>
-      <li class="menu-bar"><a href="#eventsID" class="menu-portfolio">Events</a></li>
-      <li class="menu-bar"><a href="#about" class="menu-superpowers">About</a></li>
+  <nav class="navbar"
+    <ul class="navbar navbar-nav justify-content-center">
+      <li class="nav-item"><a href="#contact" class="nav-link">Syllabus</a></li>
+      <li class="nav-item"><a href="#join" class="nav-link">Join</a></li>
+      <li class="nav-item"><a href="#events" class="nav-link">Events</a></li>
+      <li class="nav-item"><a href="#about" class="nav-link">About</a></li>  
     </ul>
-  </nav>   
+  </nav>
   <div data-stellar-offset-parent="true">
     <section id="home">
       <div id="box">
@@ -41,35 +52,100 @@
 
 <body data-spy="scroll" data-target=".navbar" data-offset="50">
 
-  <div class="container-fluid">
-    <div id="about">
-      <div class="row boxSlide slideanim">
-        <h2 class="text-center slideanim">What we do</h2>
-        <div class="col-md-4 text-center slideanim">
-          <span class="glyphicon glyphicon-education fa-4x"></span>
+  <div class="container-fluid aboutSection slideanim" id = "about">
+      <div class="row justify-content-center">
+        <h2 class="text-center slideanim"> What we do</h2>
+      </div>
+
+      <div class="row">
+        <div class="col-md-4" style="padding-top:5%;">
+          <i class="fa fa-graduation-cap fa-4x pull-left" aria-hidden="true"></i>
+        </div>
+        <div class="col-md-4" style="padding-top:5%;">
+            <i class="fa fa-connectdevelop fa-4x pull-left" aria-hidden="true"></i>
+        </div>
+        <div class="col-md-4b," style="padding-top:5%;">
+            <i class="fa fa-binoculars fa-4x pull-left" aria-hidden="true"></i>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-4 text-center"style="padding-top:2%;">
           <h3>Teach</h3>
           <h4>Lorem ipsum dolor sit amet..</h4>
         </div>
-        <div class="col-md-4 text-center slideanim">
-          <span class="glyphicon glyphicon-flash fa-4x"></span>
+        <div class="col-md-4 text-center" style="padding-top:2%;" >
           <h3>Connect</h3>
           <h4>Lorem ipsum dolor sit amet..</h4>
         </div>
-        <div class="col-md-4 text-center slideanim">
-          <span class="glyphicon glyphicon-globe fa-4x"></span>
+        <div class="col-md-4 text-center" style="padding-top:2%;">
           <h3>Explore</h3>
           <h4>Lorem ipsum dolor sit amet..</h4>
         </div>
         <hr>
       </div>
-    </div>
 
   </div>
   
-  <div class="container eventsContainer slideanim">
-      
-  </div>
+    <div class="container eventsContainer slideanim" id="events">
+        <div class="row justify-content-center">
+            <h2 class="text-center slideanim">Events</h2>
+          </div>
+          <div class="row">
+            <div class="col-md-4">
+            <div class="card" style="width: 20rem;">
+                <img class="card-img-top" src=""" alt="Card image cap">
+                <div class="card-block">
+                  <h4 class="card-title">Build Tetris With Python</h4>
+                  <p class="card-text">Learn how to build an oldtime favorite video game through code. No coding experience required. </p>
+                </div>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item" style="background:none;">Stanley Thomas</li>
+                  <li class="list-group-item"style="background:none;">November 30 7 pm</li>
+                </ul>
+                <div class="card-block text-center">
+                  <a href="#" class="card-link">Starter kit</a>
+                  <a href="#" class="card-link">RSVP on Facebook</a>
+                </div>
+              </div>
+            </div>
+            
+             <div class="col-md-4">
+                <div class="card" style="width: 20rem;">
+                    <img class="card-img-top" src="..." alt="Card image cap">
+                    <div class="card-block">
+                      <h4 class="card-title">Machine Learning Cookies</h4>
+                      <p class="card-text"> Bake from Google's perfect chocolate chip cookie recipe and learn about machine learning. Coded to perfection. </p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item" style="background:none;">Greenbaum Kitchen</li>
+                      <li class="list-group-item"style="background:none;">December 3 7 pm</li>
+                    </ul>
+                    <div class="card-block text-center">
+                      <a href="#" class="card-link">RSVP on Facebook</a>
+                    </div>
+                  </div>
+              </div> 
 
+              <div class="col-md-4">
+                  <div class="card" style="width: 20rem;">
+                      <img class="card-img-top" src="..." alt="Card image cap">
+                      <div class="card-block">
+                        <h4 class="card-title">Pitch Night</h4>
+                        <p class="card-text">Have a tech idea? Want to connect to potential collaborators? Join us for pitch night to accelerate your new idea</p>
+                      </div>
+                      <ul class="list-group list-group-flush">
+                        <li class="list-group-item" style="background:none;">Greenbaum Kitchen</li>
+                        <li class="list-group-item"style="background:none;">December 3 7 pm</li>
+                      </ul>
+                      <div class="card-block text-center">
+                        <a href="#" class="card-link">RSVP on Facebook</a>
+                      </div>
+                    </div>
+                </div>
+          </div>
+    </div>
+ 
 
   <div data-stellar-offset-parent="true">
     <div class="photo end slideanim" data-stellar-background-ratio="0.5">
