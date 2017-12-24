@@ -132,9 +132,9 @@ span {
 
 body {
     background: #BBD2C5;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #536976, #BBD2C5);     
-    background: linear-gradient(to right, #536976, #BBD2C5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+     */ 
-    background-image:url(Petrol.jpg);    
+    background: -webkit-linear-gradient(to top, #919FA7, #D9E6DF);     
+    background: linear-gradient(to top, #919FA7, #D9E6D7);  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+     */  
+
     /* background: white; */
 
     /* Full height */
@@ -151,11 +151,7 @@ body {
 }
 
 
-.row{
-  width: 100%;
-  margin-left: 100px; 
-  margin: auto; 
-}
+
 
 .eventsContainer {
     height: 100px; 
@@ -174,16 +170,14 @@ body {
 #eventsEle{
     
 }
-.boxSlide{
-    border: 3px solid white; 
-    padding-bottom: 200px;
+.aboutSection{
+    height:100%;
     padding-top: 75px;
     margin-top: 75px;
     /* margin: auto; */
     /* margin-left: 200px; */
     color: white;
-    background: rgba(0, 0, 0, 0.3); 
-    height: 80%;
+    background: rgba(0,0,0,.3);
 }
 
 
@@ -341,8 +335,8 @@ a.socialIcon:hover, .socialHoverClass {
       }
 
       #about {
-          height: 750px;
-          width: 100%;
+          height: 100%;
+          background: #1C2321;
       }
       
       #contact {
