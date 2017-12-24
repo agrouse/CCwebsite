@@ -84,7 +84,7 @@ form {
 }
 
 .menu-bar li {
-	color: silver;
+	color: black;
 	display: inline-block;
 	margin: 1em 1em;
 	font-family: "Open Sans", Helvetica, sans-serif;
@@ -94,7 +94,7 @@ form {
 
 .menu-bar li a {
 	display: inline-block;
-	color: white;
+	color: black;
 	text-decoration: none;
 	padding: 0;
   font-size: 16px;
@@ -133,6 +133,7 @@ span {
 body {
     background: #BBD2C5;  /* fallback for old browsers */
     background-image: linear-gradient(to top, #dfe9f3 0%, white 100%);
+
     /* background: white; */
 
     /* Full height */
@@ -159,6 +160,7 @@ body {
     /* margin-top: 75px; */
     height: 80%;
     /* display: inline-block; */
+    margin-bottom: 10%;
 }
 
 .eventsContainer p{
@@ -168,7 +170,8 @@ body {
 .card{
     color: white;
     background: rgba(230,175,46, .7);
-    background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+    background-image: linear-gradient(-20deg, #616161 0%, #9bc5c3 100%);
+
 }
 .aboutSection{
     height:100%;
