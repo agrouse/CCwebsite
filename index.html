@@ -24,69 +24,68 @@
 <title>Cookies and Code</title>
 
 <div id="main" class="container-fluid">
-  <nav class="navbar"
-    <ul class="navbar navbar-nav justify-content-center">
-      <li class="nav-item"><a href="#contact" class="nav-link">Syllabus</a></li>
-      <li class="nav-item"><a href="#join" class="nav-link">Join</a></li>
-      <li class="nav-item"><a href="#events" class="nav-link">Events</a></li>
-      <li class="nav-item"><a href="#about" class="nav-link">About</a></li>  
-    </ul>
-  </nav>
-  <div data-stellar-offset-parent="true">
-    <section id="home">
-      <div id="box">
-        <span>Cookies & Code</span><br>
-        <br>
-        <br>
-        <div class="subtitle ">
-          <h3>Computer Science Student Club</h3>
-          <h3>Tulane University</h3>
-        </div>
-      </div>
-    </section>
-  </div>
+
+  <div class="navbar">
+      <ul class="nav nav-tabs justify-content-center" style="margin-top: 3%;">
+        <li class="nav-item"><a href="#about" data-toggle="tab" class="nav-link">Home</a></li>
+        <li class="nav-item"><a href="#events" data-toggle="tab" class="nav-link">Events</a></li> 
+        <li class="nav-item"><a href="#join" data-toggle="tab" class="nav-link">Reach Out</a></li>
+      </ul>
+    </div>
 </div>
 
 
 
 
-<body data-spy="scroll" data-target=".navbar" data-offset="50">
-
-  <div class="container-fluid aboutSection slideanim" id = "about">
-      <div class="row justify-content-center">
-        <h2 class="text-center slideanim"> What we do</h2>
+<body>
+<div class="tab-content">
+<div class="tab-pane active" id="about">
+  <div class="container-fluid aboutSection slideanim">
+      <section id="home">
+          <div id="box">
+            <div class="subtitle ">
+              <h1>Cookies & Code</h1>
+              <h4>Tulane University's Computer Science Club</h4>
+            </div>
+          </div>
+        </section>
+      
+    <div class="row justify-content-center" style="padding-top: 70px;">
+        <h3 class="text-center"> What we do</h3>
       </div>
 
       <div class="row">
-        <div class="col-md-4" style="padding-top:5%;">
+        <div class="col-md-4" style="padding-top:3%;">
           <i class="fa fa-graduation-cap fa-4x pull-left" aria-hidden="true"></i>
         </div>
-        <div class="col-md-4" style="padding-top:5%;">
+        <div class="col-md-4" style="padding-top:3%;">
             <i class="fa fa-connectdevelop fa-4x pull-left" aria-hidden="true"></i>
         </div>
-        <div class="col-md-4b," style="padding-top:5%;">
+        <div class="col-md-4b," style="padding-top:3%;">
             <i class="fa fa-binoculars fa-4x pull-left" aria-hidden="true"></i>
         </div>
       </div>
 
       <div class="row">
-        <div class="col-md-4 text-center"style="padding-top:2%;">
-          <h3>Teach</h3>
-          <h4>Lorem ipsum dolor sit amet..</h4>
+        <div class="col-md-4 text-center"style="padding-top:1%;">
+          <h4>Teach</h4>
+          <p>Lorem ipsum dolor sit amet..</p>
         </div>
-        <div class="col-md-4 text-center" style="padding-top:2%;" >
+        <div class="col-md-4 text-center" style="padding-top:1%;" >
           <h3>Connect</h3>
-          <h4>Lorem ipsum dolor sit amet..</h4>
+          <p>Lorem ipsum dolor sit amet..</p>
         </div>
-        <div class="col-md-4 text-center" style="padding-top:2%;">
+        <div class="col-md-4 text-center" style="padding-top:1%;">
           <h3>Explore</h3>
-          <h4>Lorem ipsum dolor sit amet..</h4>
+          <p>Lorem ipsum dolor sit amet..</p>
         </div>
         <hr>
       </div>
 
   </div>
+</div>
   
+<div class="tab-pane" id="events">
     <div class="container eventsContainer slideanim" id="events">
         <div class="row justify-content-center">
             <h2 class="text-center slideanim">Events</h2>
@@ -94,7 +93,7 @@
           <div class="row">
             <div class="col-md-4">
             <div class="card" style="width: 20rem;">
-                <img class="card-img-top" src=""" alt="Card image cap">
+                <img class="card-img-top" src="" alt="Card image cap">
                 <div class="card-block">
                   <h4 class="card-title">Build Tetris With Python</h4>
                   <p class="card-text">Learn how to build an oldtime favorite video game through code. No coding experience required. </p>
@@ -145,33 +144,36 @@
                 </div>
           </div>
     </div>
+  </div>
  
-
+<div class="tab-pane" id="join">
   <div data-stellar-offset-parent="true">
     <div class="photo end slideanim" data-stellar-background-ratio="0.5">
-      <section id="contact" class="container-fluid">
+      <section id="contact" class="container-fluid joinContainer">
         <h2 class="text-center">CONTACT</h2>
-        <div class="row">
-          <div class="col-sm-6 col-md-12">
-            <p class="text-center" style="color: white;"></p>
-            <div class="col-sm-7 col-md-12">
-              <div class="row">
-                <div class="col-sm-6 col-md-12 form-group">
-                  <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+        <form action="mailer.php" method="POST">
+          <div class="row">
+            <div class="col-sm-6 col-md-12">
+              <p class="text-center" style="color: white;"></p>
+              <div class="col-sm-7 col-md-12">
+                <div class="row">
+                  <div class="col-sm-6 col-md-12 form-group">
+                    <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+                  </div>
+                  <div class="col-sm-6 col-md-12 form-group">
+                    <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+                  </div>
                 </div>
-                <div class="col-sm-6 col-md-12 form-group">
-                  <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
-                </div>
-              </div>
-              <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea><br>
-              <div class="row">
-                <div class="col-sm-6 col-md-12 form-group" id="btnWrapper">
-                  <button class="btn btn-default" type="submit" >Send</button>
+                <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea><br>
+                <div class="row">
+                  <div class="col-sm-6 col-md-12 form-group" id="btnWrapper">
+                    <button class="btn btn-default" type="submit">Send</button>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
+        </form>
         <div class="row">
           <div class="col-sm-6 col-md-12">
             <ul class="social-network">
@@ -196,6 +198,8 @@
   </div>
   </div>
   </div>
+  </div>
+</div>
 </body>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>

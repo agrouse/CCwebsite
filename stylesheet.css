@@ -1,11 +1,9 @@
 @charset "utf-8";
 
-body, html {
-    height: 100%;
+body {
+    line-height: none;
 }
-#main {
-    height:100%;
-}
+
 .navbar-fixed-top {
 	font-size: 14px;
 	color: black;
@@ -19,8 +17,6 @@ li {
 	list-style-type: none;
 	text-decoration: none;
 }
-
-
 
 p {
 
@@ -63,9 +59,7 @@ form {
 }
 
 
-.container-fluid {
-    padding-bottom: 200px;
-}
+
 .navbar {
     justify-content: center;
 }
@@ -117,7 +111,7 @@ form {
 	font-size: 72px;
 	position: relative;
     text-align: center;
-    height: 100%;
+
 }
 
 span {
@@ -126,13 +120,13 @@ span {
     border: 1px solid black;
     display: inline-block;
 	position: relative;
-    top: 200px;
+    top: 100px;
 }
 
 .subtitle{
     border: none;
     display: block;
-    height: 300px;
+    top: 100px;
 }
 
 body {
@@ -158,33 +152,34 @@ body {
 
 
 .eventsContainer {
-    margin-top: 10%;
     height: 100px; 
     padding-bottom: 200px;
     /* padding-top: 75px; */
     /* margin-top: 75px; */
-    height: 80%;
+    height: 70%;
     /* display: inline-block; */
-    margin-bottom: 10%;
+    margin-bottom: 20%;
+    padding-top: 65px;
 }
 
 .eventsContainer p{
     vertical-align: middle;
     display: inline-block;
+    
 }
 .card{
     color: white;
     background: rgba(0,0,0,.3);
+    margin-top: 15%;
 
 }
 .aboutSection{
     height:100%;
-    padding-top: 75px;
-    margin-top: 75px;
+    padding-top: 65px;
     /* margin: auto; */
     /* margin-left: 200px; */
-    color: white;
-    background: rgba(0,0,0,.3);
+    color: black;
+
 }
 
 
@@ -198,6 +193,7 @@ body {
     width: 50%;
     margin:0 auto;
     left: 15px;
+    padding-top: 65px;
   
 }
 
