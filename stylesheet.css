@@ -10,12 +10,25 @@ body {
 	overflow: hidden;
     padding-right: 30;
     position: fixed !important;
-	}
+    }
+    
+ .navbar  li{
+    height:43px;
+}
 
+.nav-tabs .nav-link.active {
+    border: none;
+    background: rgba(0,0,0,.3);
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+    width: 100%;
+    color: white;
+}
 
 li {
 	list-style-type: none;
-	text-decoration: none;
+    text-decoration: none;
 }
 
 p {
@@ -131,7 +144,7 @@ span {
 
 body {
     background: #BBD2C5;  /* fallback for old browsers */
-    background-image: linear-gradient(to top, #dfe9f3 0%, white 100%);
+    background-image: linear-gradient(to top, #dfe9f3 0%, white 100%);  
 
     /* background: white; */
 
@@ -173,15 +186,23 @@ body {
     margin-top: 15%;
 
 }
-.aboutSection{
+.homeSection{
     height:100%;
     padding-top: 65px;
     /* margin: auto; */
     /* margin-left: 200px; */
     color: black;
+    background: linear-gradient(rgba(255, 255, 255, 0.8),rgba(223,233,243, .8)),
+    rgba(255,255,255,0.8) url('vectorDots.jpg') no-repeat center;
+background-size: cover;
+color: black;
+text-align: center;
+text-rendering: optimizeLegibility;
+margin: 0;
+padding: 15px 10px 15px;
+min-height: 640px;
 
 }
-
 
 .img-circle {
   border:2px solid white;
