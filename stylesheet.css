@@ -196,7 +196,8 @@ min-height: 640px; */
 
 }
 .aboutSection {
-    padding-top: 65px;
+ padding-top: 65px;
+ height: 400px;
 
 }
 
@@ -345,9 +346,6 @@ a.socialIcon:hover, .socialHoverClass {
         background: white;
       }
 
-      #portfolio {
-      	height: 350px;
-      }
 
       #about {
           background: #1C2321;
