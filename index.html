@@ -72,6 +72,7 @@
 
     <div class="tab-pane" id="about">
       <div class="container-fluid aboutSection">
+
         <div class="row justify-content-center" style="padding-top: 70px;">
           <h3 class="text-center"> What we do</h3>
         </div>
@@ -92,17 +93,6 @@
             <h4>Explore</h4>
             <p>Lorem ipsum dolor sit amet..</p>
           </div>
-
-
-
-
-
-
-
-          <div class="col-md-4 text-center" style="padding-top:1%;">
-
-          </div>
-          <hr>
         </div>
       </div>
 
@@ -176,9 +166,24 @@
     <div class="tab-pane" id="join">
       <div data-stellar-offset-parent="true">
         <div class="photo end" data-stellar-background-ratio="0.5">
+          <div class="text-center" id="lightbulb" style="padding-top: 3%">
+              <h6>Have a tech idea?</h6>
+              <button class="btn btn-outline-secondary">  
+                <i class="fa fa-lightbulb-o fa-3x" style="left:0;" aria-hidden="true"></i>
+              </button>
+              <p id="hidden" style="justify-content:center; padding-left:25%; padding-right:25%; padding-top: 2%;">In collaboration with the Albert Lepage Center, Cookies and Code members
+                can submit their entrepreneurial tech ideas. Those interested will have the opportunity to work with likeminded 
+                students as well as experts in relevant fields. Please visit:
+                <a href="http://business.tulane.edu/forms/projectrequest.htm">Lepage Project Request Form</a>
+              </p>
+            </div>
+           
+            
+
+          </div>
           <section id="contact" class="container-fluid joinContainer">
             <h2 class="text-center">CONTACT</h2>
-            <form action="mailer.php" method="POST">
+            <form action="https://formspree.io/tulanecookiesandcode@gmail.com" method="POST">
               <div class="row">
                 <div class="col-sm-6 col-md-12">
                   <p class="text-center" style="color: white;"></p>
@@ -191,7 +196,7 @@
                         <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
                       </div>
                     </div>
-                    <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea>
+                    <textarea class="form-control" id="message" name="message" placeholder="Message" rows="5"></textarea>
                     <br>
                     <div class="row">
                       <div class="col-sm-6 col-md-12 form-group" id="btnWrapper">
@@ -236,11 +241,15 @@
           </div>
         </div>
 
+        <script src="jquery-2.1.0.min.js"></script>
+        <script src="app.js"></script>
+
 </body>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"></script>
 <script src="https://use.fontawesome.com/a276842440.js"></script>
+
 
 <script>
   $(function () {
@@ -356,7 +365,21 @@
   /* end dot nav */
 
 </script>
+<script>
 
+$("#hidden").hide();
+
+
+$( "#lightbulb").click(function() {
+  $( "#hidden" ).toggle( "slow", function() {
+    // Animation complete.
+  });
+});
+</script>
+<script>
+  // Set up an event listener for the contact form.
+
+</script>
 
 </body>
 
