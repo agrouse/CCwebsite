@@ -106,7 +106,7 @@ form {
 
 .navbar li a {
 	display: inline-block;
-	color: black;
+	color: white;
 	text-decoration: none;
 	padding: 0;
   font-size: 16px;
@@ -152,7 +152,8 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    color: black; 
+    color: white; 
+    background-image:url(Petrol.jpg); 
       
   
 }
@@ -179,11 +180,16 @@ body {
     margin-top: 15%;
 
 }
+.card-block {
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 5%;
+}
 .homeSection{
     padding-top: 65px;
     /* margin: auto; */
     /* margin-left: 200px; */
-    color: black;
+
     /* background: linear-gradient(rgba(251, 252, 254, 1),rgba(223,233,243, .1)),
     rgba(223,233,243,.1) url('vectorDotsEdit.jpg') no-repeat center; */
 /* background-size: cover;
@@ -226,7 +232,14 @@ min-height: 640px; */
 #btnWrapper {
     display: flex;
     justify-content: center;
+    color: yellows;
   }
+
+.btn-outline-secondary {
+    color: white;
+    border-radius: 0px;
+    border-color: white;
+}
 
 .footer, .push {
     height: 10px;
